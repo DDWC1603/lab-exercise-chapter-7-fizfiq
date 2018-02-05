@@ -3,9 +3,20 @@
 //if the day is sunday, what day is it?
 //write your code using enum and Sunday is your default 'day'
 
-minggu hariIni;
+#include<iostream>
 
-cout<<"Hari ke-"hariIni+1;
-return 0;
+using namespace std;
 
+enum today{Sun,Mon,Tue,Wed,Thu,Fri,Sat};
 
+int main()
+{
+	int today;
+	string day;
+	cout<<"Today day: ";
+	cin>>day;
+	
+	cout<<" "<<day<<endl;
+	
+	std::cout<<"Day "<<today+1;
+}
